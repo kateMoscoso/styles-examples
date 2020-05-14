@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    font-size: 16px;
+}
+.header {
+    outline: 1px solid salmon;
+    height: 3rem;
+}
+.container {
+    display: flex;
+    height: inherit;
+}
+/*flex 1 ocupa todo el espacio disponible*/
+.content {
+    outline: 1px solid salmon;
+    flex: 1;
+}
+.aside {
+    outline: 1px solid salmon;
+    flex: 0 0 25%;
+}
+/*outline es un borde que se dibuja por fuera del elemento
+pero que no ocupa espacio, por lo que, no afecta al espacio
+del resto de los elementos*/
+.footer {
+    outline: 1px solid salmon;
+    height: 6rem;
+    margin-top: auto;
+}
+.Menu {
+    display: flex;
+}
+.Menu-item {
+    list-style: none;
+    flex:1;
+    outline: 1px solid cyan;
+    line-height: 3rem;
+    text-align: center;
+    transition: flex .5;
+}
+.Menu-item:hover {
+    flex:8;
+}
